@@ -5,81 +5,27 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>K24TV - Télévision du Kasaï</title>
 <style>
-*{margin:0;padding:0;box-sizing:border-box}
-body{background:#000;color:white;font-family:'Arial',sans-serif}
-.topbar{padding:10px 15px;display:flex;justify-content:space-between;align-items:center}
-.live-btn{background:#D32F2F;padding:6px 12px;border-radius:20px;font-size:12px;font-weight:900;display:flex;align-items:center;gap:5px}
-.live-dot{width:8px;height:8px;background:white;border-radius:50%;animation:blink 1s infinite}
-@keyframes blink{50%{opacity:0}}
-.hero{background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.9)),url('https://images.unsplash.com/photo-1478737270239-2f02b77fc618?w=800') center/cover; padding:20px;text-align:center;position:relative}
-.logo{font-size:55px;font-weight:900;margin:10px 0;letter-spacing:2px}
+*{margin:0;padding:0}
+body{background:#000;color:white;font-family:Arial}
+.top{background:#D32F2F;padding:15px;text-align:center}
+.logo{font-size:50px;font-weight:900}
 .logo .k{color:#D32F2F}.logo .n{color:#ccc}.logo .tv{color:#D32F2F}
-.menu{display:flex;justify-content:center;gap:10px;font-size:11px;color:#aaa;margin:15px 0}
-.alert{background:#1a1a1a;border:1px solid #D32F2F;padding:12px;border-radius:10px;margin:15px 0;display:flex;align-items:center;gap:10px;font-size:12px}
-.alert-btn{background:#333;border:none;color:white;padding:6px 12px;border-radius:6px;font-size:11px}
-.card{background:linear-gradient(90deg,rgba(0,0,0,0.9) 0%,transparent 100%),url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800') center/cover;border-radius:15px;padding:20px;margin:20px 15px}
-.card h2{font-size:18px;margin-bottom:5px}
-.card h2 span{color:#D32F2F}
-.card p{font-size:12px;color:#ccc;margin:10px 0;max-width:200px}
-.btn{background:#D32F2F;color:white;border:none;padding:10px 20px;border-radius:8px;font-weight:900;display:flex;align-items:center;gap:8px;font-size:12px}
-.social{display:flex;gap:8px;margin-top:15px}
-.social a{background:#222;padding:6px 10px;border-radius:6px;color:white;text-decoration:none;font-size:12px}
-.categories{padding:20px 15px}
-.cat-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-top:10px}
-.cat-item{background:#111;border-radius:10px;padding:12px 5px;text-align:center;font-size:9px;border:1px solid #222}
-.cat-item.red{background:#D32F2F;border-color:#D32F2F}
-.cat-icon{font-size:20px;margin-bottom:5px}
-.news{padding:0 15px 20px}
-.news-title{font-size:12px;font-weight:900;border-bottom:2px solid #D32F2F;display:inline-block;padding-bottom:5px}
+.badge{background:red;padding:8px;border-radius:5px;display:inline-block;font-weight:900;margin:10px}
+.menu{background:#111;padding:10px;text-align:center;font-size:12px}
+.card{margin:20px;padding:20px;background:#111;border-radius:10px;text-align:center}
+.btn{background:#D32F2F;color:white;padding:15px;border:none;border-radius:8px;font-weight:900;font-size:16px}
 </style>
 </head>
 <body>
-
-<div class="topbar">
-<div>☰</div>
-<div class="live-btn"><span class="live-dot"></span>EN DIRECT</div>
+<div class="top">
+<div class="badge">● EN DIRECT</div>
+<div class="logo"><span style="color:#D32F2F">K</span><span style="color:#ccc">24</span><span style="color:#D32F2F">TV</span></div>
 </div>
-
-<div class="hero">
-<div class="logo"><span class="k">K</span><span class="n">24</span><span class="tv">TV</span></div>
-<div class="menu">ACCUEIL • POLITIQUE • SOCIÉTÉ • SPORT • KASAÏ • MONDE</div>
-
-<div class="alert">
-⚠️ <div style="flex:1;text-align:left">
-<b>Cette vidéo n'est pas disponible</b><br>
-<small>Le contenu demandé n'est plus disponible ou a été supprimé.</small>
-</div>
-<button class="alert-btn">↻ RÉESSAYER</button>
-</div>
-</div>
-
+<div class="menu">ACCUEIL POLITIQUE SOCIETE SPORT KASAI MONDE</div>
 <div class="card">
-<h2>BIENVENUE SUR<br><span>K24TV</span></h2>
-<p>Votre source d'information fiable et en temps réel depuis le Kasaï et le monde.</p>
+<h2>BIENVENUE SUR K24TV</h2>
+<p>La Télévision du Kasaï</p>
 <button class="btn" onclick="window.open('https://www.youtube.com/@johnkayo-w4e/live','_blank')">▶ REGARDER EN DIRECT</button>
-<div class="social">
-<a href="#">f</a><a href="#">▶</a><a href="#">📷</a><a href="#">𝕏</a>
 </div>
-</div>
-
-<div class="categories">
-<div class="news-title">NOS CATÉGORIES</div>
-<div class="cat-grid">
-<div class="cat-item"><div class="cat-icon">🏛️</div>POLITIQUE</div>
-<div class="cat-item"><div class="cat-icon">👥</div>SOCIÉTÉ</div>
-<div class="cat-item"><div class="cat-icon">⚽</div>SPORT</div>
-<div class="cat-item"><div class="cat-icon">📍</div>KASAÏ</div>
-<div class="cat-item"><div class="cat-icon">🌍</div>MONDE</div>
-<div class="cat-item red"><div class="cat-icon">📡</div>EN DIRECT</div>
-</div>
-</div>
-
-<div class="news">
-<div style="display:flex;justify-content:space-between;align-items:center">
-<div class="news-title">DERNIÈRES ACTUALITÉS</div>
-<div style="font-size:11px;color:#D32F2F">VOIR TOUT ></div>
-</div>
-</div>
-
 </body>
 </html>
