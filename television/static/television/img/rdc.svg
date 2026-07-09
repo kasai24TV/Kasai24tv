@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect width="400" height="300" fill="#0a0a0a"/>
+  <path d="M150,20 L250,30 L280,80 L270,150 L240,220 L180,250 L120,240 L90,180 L100,100 Z" 
+        fill="#007FFF" stroke="#FFD700" stroke-width="2"/>
+  <text x="200" y="155" font-size="18" font-weight="bold" text-anchor="middle" fill="#FFD700">RDC</text>
+</svg>
