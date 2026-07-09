@@ -1,0 +1,20 @@
+:root { --yellow: #FFD700; --red: #e50914; --bg: #0a0a0a; --card: #1a1a1a; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: var(--bg); color: #fff; font-family: 'Segoe UI', Arial, sans-serif; }
+header { position: sticky; top: 0; background: rgba(10,10,10,0.9); backdrop-filter: blur(10px); padding: 12px 15px; border-bottom: 1px solid #222; z-index: 10; }
+.logo { color: var(--yellow); font-size: 26px; font-weight: 900; }
+.slogan { color: #aaa; font-size: 11px; }
+nav { display: flex; gap: 15px; margin-top: 10px; overflow-x: auto; }
+nav a { color: #fff; text-decoration: none; font-weight: 600; font-size: 14px; white-space: nowrap; }
+nav a.active, nav a:hover { color: var(--yellow); border-bottom: 2px solid var(--yellow); }
+.container { padding: 20px 15px; max-width: 600px; margin: auto; }
+.btn { padding: 12px 22px; border-radius: 8px; font-weight: 700; text-decoration: none; display: inline-block; }
+.btn-red { background: var(--red); color: #fff; border-radius: 25px; border: none; }
+.btn-white { background: #fff; color: #000; margin-top: 15px; }
+.hero h1 { font-size: 32px; line-height: 1.2; margin: 20px 0 10px 0; }
+.hero h1 .yellow { color: var(--yellow); }
+.map-box { margin-top: 25px; border: 2px solid var(--yellow); border-radius: 12px; overflow: hidden; box-shadow: 0 0 20px rgba(255,215,0,0.2); }
+.map-box img { width: 100%; display: block; filter: brightness(1.1) contrast(1.1); }
+.card { background: var(--card); border-radius: 12px; padding: 15px; margin-top: 25px; border: 1px solid #222; }
+.live-title { color: var(--red); font-weight: 800; }
+footer { text-align: center; color: #555; padding: 30px 15px; font-size: 12px; }
