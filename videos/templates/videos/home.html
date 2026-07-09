@@ -2,23 +2,26 @@
 <html>
 <head>
     <title>Kasai24 TV</title>
+    {% load static %}
+    <link rel="icon" href="{% static 'videos/favicon.png' %}" type="image/png">
     <style>
-        body { font-family: Arial; background: #111; color: white; padding: 20px; text-align: center; }
-        h1 { color: red; }
-        .video { background: #222; padding: 15px; margin: 10px auto; border-radius: 10px; max-width: 600px; }
+        body { font-family: Arial; background: #111; color: white; margin: 0; padding: 20px; }
+        h1 { color: red; text-align: center; }
+        .video { background: #222; padding: 15px; margin: 10px 0; border-radius: 8px; }
         a { color: red; text-decoration: none; }
+        a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
     <h1>🔴 KASAI24 TV</h1>
     {% for video in videos %}
-        <div class="video">
-            <h2>{{ video.titre }}</h2>
-            <p>{{ video.description }}</p>
-            <a href="{{ video.video_url }}" target="_blank">▶ Regarder</a>
-        </div>
+    <div class="video">
+        <h2>{{ video.titre }}</h2>
+        <p>{{ video.description }}</p>
+        <a href="{{ video.video_url }}" target="_blank">Regarder la vidéo</a>
+    </div>
     {% empty %}
-        <p>Aucune vidéo pour le moment. Ajoute-en dans /admin/</p>
+    <p>Aucune vidéo pour le moment.</p>
     {% endfor %}
 </body>
 </html>
