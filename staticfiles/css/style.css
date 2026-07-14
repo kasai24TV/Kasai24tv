@@ -1,0 +1,21 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background: #0A0F1E; color: #fff; font-family: Arial; padding-bottom: 70px; }
+
+.header { display: flex; justify-content: space-between; padding: 15px; font-weight: bold; font-size: 18px; }
+.logo { color: #2563EB; }
+
+.badge { background: #E50914; padding: 4px 8px; border-radius: 5px; font-size: 12px; display: inline-block; }
+.hero { padding: 20px; }
+.hero h1 { font-size: 24px; margin: 10px 0; }
+.btn { background: #2563EB; color: #fff; border: none; padding: 10px 15px; border-radius: 8px; margin-top: 10px; }
+
+.grid { display: flex; gap: 10px; padding: 15px; overflow-x: auto; }
+.card { background: #111827; min-width: 120px; height: 160px; border-radius: 10px; padding: 10px; position: relative; }
+.live { background: red; font-size: 10px; padding: 2px 5px; position: absolute; bottom: 5px; right: 5px; }
+
+.categories { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 15px; }
+.cat { background: #111827; padding: 20px; border-radius: 10px; text-align: center; }
+
+.navbar { position: fixed; bottom: 0; width: 100%; background: #111827; display: flex; justify-content: space-around; padding: 12px 0; }
+.nav { font-size: 12px; color: #888; }
+.nav.active { color: #2563EB; }
